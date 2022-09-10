@@ -95,3 +95,52 @@ if clean_q == 'Y':
 else:
     print('Do it next time. NEXT TIME.')
 
+# study
+
+study_30 = 50 
+study_1 = 150
+
+# programming has the same values as studying 
+programming_30 = study_30
+programming_1 = study_1 
+
+# water
+water_1point5L = 30
+water_2L = 50
+
+# books
+book_10 = 100 
+book_15 = 150
+
+# muay thai (or self-defense learning)
+muay_thai = 100
+
+# learn something new, thats helpful 
+learning = 50
+
+# pray 
+question_Fajr = input('Have you prayed Fajr? (Y,N) ').upper()
+if question_Fajr == 'Y':
+    question_Zuhr = input('Good job, have you prayed Zuhr? ').upper()
+    if question_Zuhr == 'Y':
+        question_Asr = input('Asr? ').upper()
+        if question_Asr == 'Y':
+            question_Maghrib_Isha = input('Have you prayed Maghrib and Isha? ')
+            if question_Maghrib_Isha == 'Y':
+                print('Good job, you prayed the whole day! ')
+            elif question_Zuhr or question_Asr or question_Maghrib_Isha == 'N':
+                print("Go pray, or you'll lose points. ")    
+else:
+    print('Go pray.')    
+
+# cold shower
+cold_shower = 100 
+
+# ** negative points ** 
+fap = -500 
+not_praying = -600
+
+# counter
+counter = int(input("Add how many points that you've got "))
+
+print(f'You have got {counter} amount of points.')
